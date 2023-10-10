@@ -1,8 +1,8 @@
 :root {
-    --first: #FFC62F;
-    --second: #FFCD49;
-    --third: #FFDD84;
-    --fourth: #FFE9B0;
+    --first: rgba(255, 198, 47, 0.75);
+    --second: rgba(255, 205, 73, 0.8);
+    --third: rgba(255, 221, 132, 0.71);
+    --fourth: rgba(255, 233, 176, 0.82);
     --fifth: #FFFBF2;
     --sixth: #FFFCF3;
     --accent: #FF6962;
@@ -52,6 +52,7 @@ a {
 
 .intro {
     margin: 0.25rem;
+    margin-right: 15rem;
 }
 
 .bubble-wrapper {
@@ -86,17 +87,17 @@ a {
     position: absolute;
     top: 25px;
     left: 20%;
-    transform: translateX(40%);
+    transform: translateX(20%);
 }
 
 .bubble.third:before {
-    background-color: var(--third);
+    background: radial-gradient(var(--third), var(--fourth));
 }
 .bubble.second:before {
-    background-color: var(--second);
+    background: radial-gradient(var(--second), var(--third));
 }
 .bubble.first:before {
-    background-color: var(--second);
+    background: radial-gradient(var(--first), var(--second), var(--third));
 }
 
 .bubble:hover {
